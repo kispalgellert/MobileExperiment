@@ -12,13 +12,13 @@
 	<dict>
 		<key>CFBundlePrimaryIcon</key>
 		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>iMove++114.png</string>
-				<string>iMove++57.png</string>
-			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>AppIconLarge(114x114).png</string>
+				<string>AppIconSmall(57x57).png</string>
+			</array>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
@@ -50,8 +50,6 @@
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
-	<key>UIPrerenderedIcon</key>
-	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

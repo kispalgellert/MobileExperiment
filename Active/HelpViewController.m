@@ -21,17 +21,17 @@
 - (IBAction)sliderChanged:(id)sender {
     
     if (slider.value >= 0.0 && slider.value < 0.166) {
-        imageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"1.png"],nil];
+        imageView.image = [UIImage imageNamed:@"InstructionStep1"];
     } else if (slider.value >= 0.166 && slider.value < 0.332) {
-        imageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"2.png"],nil];
+        imageView.image = [UIImage imageNamed:@"InstructionStep2"];
     } else if (slider.value >= 0.332 && slider.value < 0.498) {
-        imageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"3.png"],nil];
+        imageView.image = [UIImage imageNamed:@"InstructionStep3"];
     } else if (slider.value >= 0.498 && slider.value < 0.664) {
-        imageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"4.JPG"],nil];
+        imageView.image = [UIImage imageNamed:@"InstructionStep4"];
     } else if (slider.value >= 0.664 && slider.value < 0.830) {
-        imageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"5.png"],nil];
+        imageView.image = [UIImage imageNamed:@"InstructionStep5"];
     } else if (slider.value > 0.830) {
-        imageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"6.png"],nil];
+        imageView.image = [UIImage imageNamed:@"InstructionStep6"];
     }
 
     imageView.animationDuration = 1; //whatever you want (in seconds)
@@ -45,6 +45,8 @@
     
     self.navigationItem.title = @"Instructions";
     [self.navigationController.navigationBar setTintColor:[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"nav1.png"]]];
+    
+    imageView.image = [UIImage imageNamed:@"InstructionStep1"];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

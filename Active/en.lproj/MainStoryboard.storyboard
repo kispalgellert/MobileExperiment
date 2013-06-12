@@ -191,7 +191,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Step1 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="zRF-C6-W2q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zRF-C6-W2q">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="375" id="2VU-GP-goE"/>
                                 </constraints>
@@ -497,7 +497,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Step1 2.png" width="828" height="1668"/>
         <image name="butt-play.png" width="369" height="195"/>
         <image name="butt-stop.png" width="369" height="195"/>
         <image name="ex30.png" width="30" height="30"/>
@@ -547,6 +546,7 @@
         <class className="HelpViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HelpViewController.h"/>
             <relationships>
+                <relationship kind="action" name="gggf:"/>
                 <relationship kind="action" name="sliderChanged:"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="slider" candidateClass="UISlider"/>
