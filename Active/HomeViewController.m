@@ -1,9 +1,10 @@
 //
-//  HomeViewController.m
-//  Active++
+//  Active ++
 //
-//  Created by Adesh Banvait on 2012-11-30.
-//  Copyright (c) 2012 Ace. All rights reserved.
+//  Created by Gellert Kispal, Faraz Bhojani, Adesh Banvait
+//  Copyright (c) 2012 Mobile++. All rights reserved.
+//
+//  Home view, contains an image and a big button so the user can touch anywhere
 //
 
 #import "HomeViewController.h"
@@ -24,9 +25,16 @@
 }
 
 - (void)viewDidLoad
-{
+{    
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Title2.png"]];
+    backgroundView.autoresizingMask = UIViewContentModeScaleToFill;
+    
+    backgroundView.frame = CGRectMake(0, -20, 320, 568);
+    
+    [self.view addSubview:backgroundView];
+    [self.view sendSubviewToBack:backgroundView];
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

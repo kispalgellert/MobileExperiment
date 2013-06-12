@@ -1,13 +1,24 @@
 //
-//  FifthViewController.h
-//  iMove++
+//  Active ++
 //
-//  Created by Adesh Banvait on 2012-11-25.
-//  Copyright (c) 2012 Ace. All rights reserved.
+//  Created by Gellert Kispal, Faraz Bhojani, Adesh Banvait
+//  Copyright (c) 2012 Mobile++. All rights reserved.
+//
+//  This view contains the a picker and view that we project the graph on
 //
 
 #import <UIKit/UIKit.h>
+#import "CKSparkline.h"
 
-@interface FifthViewController : UIViewController
+@interface StatViewContoller : UIViewController
+{
+    CKSparkline *sparkline;
+    CKSparkline *sparkline2;
+}
 
+@property (nonatomic, retain) IBOutlet CKSparkline *sparkline;
+@property (weak, nonatomic) IBOutlet UIPickerView *plotPicker;
+@property (strong, nonatomic) NSArray *arrayForPlotPicker;
+@property (strong, nonatomic) NSString *selectedGraph;
 @end
+

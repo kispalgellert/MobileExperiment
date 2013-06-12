@@ -1,13 +1,30 @@
 //
-//  ActivitySelectionDetailViewController.h
-//  iMove++
+//  Active ++
 //
-//  Created by Gellert on 2012-11-27.
-//  Copyright (c) 2012 Ace. All rights reserved.
+//  Created by Gellert Kispal, Faraz Bhojani, Adesh Banvait
+//  Copyright (c) 2012 Mobile++. All rights reserved.
+//
+//  This view provides the picker that can set the exervises and thier counts
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ActivitySelectionDetailViewController : UIViewController
+@class Exercise;
+@class AvailableWorkouts;
 
+#define kFillingComponent 0
+#define kBreadComponent   1
+
+typedef void(^ActivityUpdateHandler)(void);
+
+@interface ActivitySelectionDetailViewController : UIViewController
+<UIPickerViewDelegate, UIPickerViewDataSource>
+
+@property (readwrite, nonatomic, copy) ActivityUpdateHandler updateHandler;
+@property (readwrite, nonatomic, strong) Exercise * exercise;
+@property (strong, nonatomic) IBOutlet UIPickerView *doublePicker;
+@property (strong, nonatomic) NSArray *exerciseNames;
+@property (strong, nonatomic) NSMutableArray *targetNumbersPicker;
+
+-(IBAction)buttonPressed;
 @end

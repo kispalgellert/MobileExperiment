@@ -1,15 +1,24 @@
 //
-//  AppDelegate.h
-//  Active
+//  Active ++
 //
-//  Created by Ace on 10/14/12.
-//  Copyright (c) 2012 Ace. All rights reserved.
+//  Created by Gellert Kispal, Faraz Bhojani, Adesh Banvait
+//  Copyright (c) 2012 Mobile++. All rights reserved.
+//
+//  Delegate class
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class FacebookViewContoller;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) FacebookViewContoller *viewController;
+
+@property (strong, nonatomic) FBSession *session;
 
 @end

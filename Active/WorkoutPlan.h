@@ -1,13 +1,20 @@
 //
-//  WorkoutPlan.h
-//  iMove++
+//  Active ++
 //
-//  Created by Gellert on 2012-11-24.
-//  Copyright (c) 2012 Ace. All rights reserved.
+//  Created by Gellert Kispal, Faraz Bhojani, Adesh Banvait
+//  Copyright (c) 2012 Mobile++. All rights reserved.
+//
+//  This class keeps track of the schduled workouts. Stores an array of exercises
 //
 
 #import <Foundation/Foundation.h>
 
-@interface WorkoutPlan : NSObject
+@class Exercise;
+
+@interface WorkoutPlan : NSObject <NSCoding>
+
+@property (strong, nonatomic) NSString * name;
+@property (strong, nonatomic) NSMutableArray *exercises;
+@property (strong, nonatomic) NSMutableArray *numberOfReps;
 
 @end

@@ -1,3 +1,12 @@
+//
+//  Active ++
+//
+//  Created by Gellert Kispal, Faraz Bhojani, Adesh Banvait
+//  Copyright (c) 2012 Mobile++. All rights reserved.
+//
+//  This class provides the graphing ability that we use in our stat view controller
+//
+
 #import <UIKit/UIKit.h>
 #import <math.h>
 

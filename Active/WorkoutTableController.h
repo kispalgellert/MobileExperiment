@@ -1,13 +1,14 @@
 //
-//  WorkoutTableController.h
-//  iMove++
+//  Active ++
 //
-//  Created by Gellert on 2012-11-24.
-//  Copyright (c) 2012 Ace. All rights reserved.
+//  Created by Gellert Kispal, Faraz Bhojani, Adesh Banvait
+//  Copyright (c) 2012 Mobile++. All rights reserved.
+//
+//  This view is the start view of the application. It allows the user to scheudle their workouts
 //
 
 #import <UIKit/UIKit.h>
 
-@interface WorkoutTableController : UIViewController
+@interface WorkoutTableController : UITableViewController
 
 @end

@@ -1,13 +1,14 @@
 //
-//  FourthViewController.h
-//  iMove++
+//  Active ++
 //
-//  Created by Adesh Banvait on 2012-11-13.
-//  Copyright (c) 2012 Ace. All rights reserved.
+//  Created by Gellert Kispal, Faraz Bhojani, Adesh Banvait
+//  Copyright (c) 2012 Mobile++. All rights reserved.
+//
+//  This view has the facebook login screen and template code
 //
 
 #import <UIKit/UIKit.h>
 
-@interface FourthViewController : UIViewController
+@interface FacebookViewContoller : UIViewController
 
 @end
