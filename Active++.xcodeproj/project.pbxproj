@@ -43,7 +43,6 @@
 		892EF0B71767D2AB00C1E49D /* InstructionStep4.png in Resources */ = {isa = PBXBuildFile; fileRef = 892EF09A1767D2AB00C1E49D /* InstructionStep4.png */; };
 		892EF0B81767D2AB00C1E49D /* InstructionStep5.png in Resources */ = {isa = PBXBuildFile; fileRef = 892EF09B1767D2AB00C1E49D /* InstructionStep5.png */; };
 		892EF0B91767D2AB00C1E49D /* InstructionStep6.png in Resources */ = {isa = PBXBuildFile; fileRef = 892EF09C1767D2AB00C1E49D /* InstructionStep6.png */; };
-		895992E31767EFA9004149F3 /* Active++-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 895992C21767EFA9004149F3 /* Active++-Info.plist */; };
 		895992E41767EFA9004149F3 /* ActivitySelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 895992C51767EFA9004149F3 /* ActivitySelection.m */; };
 		895992E51767EFA9004149F3 /* ActivitySelectionContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895992C71767EFA9004149F3 /* ActivitySelectionContainerViewController.m */; };
 		895992E61767EFA9004149F3 /* ActivitySelectionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895992C91767EFA9004149F3 /* ActivitySelectionDetailViewController.m */; };
@@ -337,7 +336,7 @@
 		50B6B2A6162B88E9001B2987 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Ace;
 			};
 			buildConfigurationList = 50B6B2A9162B88E9001B2987 /* Build configuration list for PBXProject "Active++" */;
@@ -393,7 +392,6 @@
 				892EF0B71767D2AB00C1E49D /* InstructionStep4.png in Resources */,
 				892EF0B81767D2AB00C1E49D /* InstructionStep5.png in Resources */,
 				892EF0B91767D2AB00C1E49D /* InstructionStep6.png in Resources */,
-				895992E31767EFA9004149F3 /* Active++-Info.plist in Resources */,
 				895992E91767EFA9004149F3 /* InfoPlist.strings in Resources */,
 				895992EA1767EFA9004149F3 /* MainStoryboard.storyboard in Resources */,
 				895992F01767EFA9004149F3 /* SparklineViewer-Info.plist in Resources */,

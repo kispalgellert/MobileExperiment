@@ -509,6 +509,66 @@
         <image name="stats30.png" width="30" height="30"/>
         <image name="transparent.png" width="496" height="208"/>
     </resources>
+    <classes>
+        <class className="ActivitySelection" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ActivitySelection.h"/>
+            <relationships>
+                <relationship kind="action" name="resetButtonPressed:"/>
+                <relationship kind="action" name="start:"/>
+                <relationship kind="action" name="stop:"/>
+            </relationships>
+        </class>
+        <class className="ActivitySelectionContainerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ActivitySelectionContainerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="resetButtonPressedInCont:"/>
+                <relationship kind="action" name="start:"/>
+                <relationship kind="action" name="stop:"/>
+                <relationship kind="outlet" name="resetButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ActivitySelectionDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ActivitySelectionDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed"/>
+                <relationship kind="outlet" name="doublePicker" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+        <class className="CKSparkline" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CKSparkline.h"/>
+        </class>
+        <class className="FacebookViewContoller" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FacebookViewContoller.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonClickHandler:"/>
+                <relationship kind="outlet" name="buttonLoginLogout" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="HelpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HelpViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="sliderChanged:"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="slider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="StatViewContoller" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StatViewContoller.h"/>
+            <relationships>
+                <relationship kind="outlet" name="plotPicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="sparkline" candidateClass="CKSparkline"/>
+            </relationships>
+        </class>
+        <class className="WorkoutTableController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WorkoutTableController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
